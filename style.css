@@ -1,0 +1,358 @@
+@keyframes shakeContainer {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-4px); }
+    50% { transform: translateX(4px); }
+    75% { transform: translateX(-4px); }
+}
+
+@keyframes explodeAnim {
+    0% { transform: translate(-50%, -50%) scale(0.2); opacity: 1; }
+    100% { transform: translate(var(--tx), var(--ty)) scale(1.5) rotate(var(--rot)); opacity: 0; }
+}
+
+/* Base Reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ================= BODY ================= */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #09090b;
+    color: #f4f4f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-image: radial-gradient(circle at top right, rgba(99, 102, 241, 0.1), transparent 40%),
+                      radial-gradient(circle at bottom left, rgba(168, 85, 247, 0.1), transparent 40%);
+}
+
+/* ================= CONTAINER ================= */
+.container {
+    background: #18181b;
+    padding: 35px;
+    border-radius: 24px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255,255,255,0.05);
+    width: 380px;
+    z-index: 10;
+    position: relative;
+}
+
+.shake-active { animation: shakeContainer 0.3s ease-in-out; }
+
+/* ================= HEADING ================= */
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 1.4em;
+    background: linear-gradient(135deg, #a855f7, #6366f1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.5px;
+}
+
+/* ================= INPUTS ================= */
+.inputs-wrapper {
+    background: #09090b;
+    padding: 15px;
+    border-radius: 16px;
+    border: 1px solid #27272a;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 0.9em;
+    color: #a1a1aa;
+}
+
+.input-group:last-child { margin-bottom: 0; }
+
+input[type="number"] {
+    width: 60px;
+    padding: 6px;
+    background: #27272a;
+    border: 1px solid #3f3f46;
+    color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.95em;
+    outline: none;
+    transition: all 0.2s ease;
+
+    /* Remove default browser arrows */
+    -moz-appearance: textfield;
+}
+
+/* Remove number input spinners for WebKit browsers */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"]:focus {
+    border-color: #8b5cf6;
+    box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.2);
+}
+
+/* ================= BUTTONS ================= */
+.action-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.generate-btn {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 12px;
+    background: linear-gradient(135deg, #6366f1, #a855f7);
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 14px 0 rgba(99, 102, 241, 0.2);
+    transition: all 0.2s ease;
+}
+
+.generate-btn:hover {
+    background: linear-gradient(135deg, #4f46e5, #9333ea);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.3);
+    transform: translateY(-1px);
+}
+
+.generate-btn:active { transform: scale(0.97); }
+
+.reset-btn {
+    padding: 12px 16px;
+    background-color: #27272a;
+    color: #a1a1aa;
+    border: 1px solid #3f3f46;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reset-btn:hover {
+    background-color: #3f3f46;
+    color: #fff;
+}
+
+.reset-btn:active { transform: scale(0.95); }
+
+/* ================= RESULT ================= */
+.result-box {
+    display: flex;
+    margin-top: 20px;
+    background: #09090b;
+    border-radius: 12px;
+    border: 1px solid #27272a;
+    overflow: hidden;
+    position: relative;
+}
+
+.result {
+    flex-grow: 1;
+    padding: 16px;
+    text-align: center;
+    word-break: break-all;
+    font-family: 'Fira Code', monospace;
+    font-size: 1.1em;
+    color: #f4f4f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copy-btn {
+    background: #18181b;
+    border: none;
+    color: #a1a1aa;
+    padding: 0 16px;
+    border-left: 1px solid #27272a;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.copy-btn:hover { background: #27272a; color: #fff; }
+
+/* ================= STRENGTH ================= */
+.strength-wrapper { margin-top: 20px; }
+
+.strength-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+    color: #a1a1aa;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+#strength-text {
+    font-family: 'Fira Code', monospace;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.strength-meter {
+    height: 6px;
+    background: #27272a;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.strength-bar {
+    height: 100%;
+    width: 0%;
+    border-radius: 3px;
+    transition: width 0.5s ease, background-color 0.5s ease;
+}
+
+/* ================= HISTORY ================= */
+.history-wrapper { margin-top: 25px; }
+
+.history-title {
+    text-align: center;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #71717a;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.history-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    min-height: 30px;
+}
+
+.history-item {
+    background: #27272a;
+    color: #d4d4d8;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    cursor: pointer;
+    font-family: 'Fira Code', monospace;
+    border: 1px solid #3f3f46;
+    transition: all 0.2s ease;
+}
+
+.history-item:hover {
+    background: #3f3f46;
+    color: #fff;
+    border-color: #6366f1;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(99, 102, 241, 0.2);
+}
+
+/* ================= TOAST ================= */
+.toast {
+    position: fixed;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #f4f4f5;
+    color: #09090b;
+    padding: 10px 24px;
+    border-radius: 30px;
+    font-size: 0.9em;
+    font-weight: 600;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    transition: top 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    z-index: 1000;
+}
+
+.toast.show { top: 30px; }
+
+/* ================= PARTICLES ================= */
+.emoji-particle {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    font-size: 2rem;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 1;
+    animation: explodeAnim 1s forwards;
+}
+
+/* ================= LIGHT THEME ================= */
+body.light {
+    background-color: #f4f4f5;
+    color: #09090b;
+}
+
+/* Main container gets a subtle purple border for emphasis */
+body.light .container {
+    background: #ffffff;
+    border: 1px solid #8b5cf6;
+}
+
+/* Inner boxes use slightly darker borders for better visibility */
+body.light .inputs-wrapper,
+body.light .result-box {
+    background: #ffffff;
+    border: 1px solid #a1a1aa;
+}
+
+/* Input fields styling in light mode */
+body.light input[type="number"] {
+    background: #ffffff;
+    color: #09090b;
+    border: 1px solid #a1a1aa;
+}
+
+/* Result text visibility */
+body.light .result {
+    color: #09090b;
+}
+
+/* Labels and headings */
+body.light .input-group,
+body.light .history-title {
+    color: #52525b;
+}
+
+/* Suggested password chips */
+body.light .history-item {
+    background: #e4e4e7;
+    color: #09090b;
+    border: 1px solid #a1a1aa;
+}
+
+/* Buttons and divider */
+body.light .reset-btn {
+    background-color: #e4e4e7;
+    color: #000;
+    border: 1px solid #a1a1aa;
+}
+
+body.light .copy-btn {
+    background: #f4f4f5;
+    color: #000;
+    border-left: 1px solid #a1a1aa;
+}
+
+/* Toast styling in light mode */
+body.light .toast {
+    background: #09090b;
+    color: #f4f4f5;
+}
