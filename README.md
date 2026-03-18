@@ -17,16 +17,14 @@ A modern and interactive password generator built using HTML, CSS, and JavaScrip
 * Suggested alternative passwords
 * Copy to clipboard functionality
 * Reset functionality for quick reconfiguration
-* Input normalization (removes leading zeros)
 * Toast notifications for user actions and errors
 * Light and Dark theme toggle
-* Clean UI with removed number input spinners
 
 ## Tech Stack
 
-* HTML
-* CSS
-* JavaScript (Vanilla)
+* **HTML5:** Semantic structure
+* **CSS3:** Custom properties, keyframe animations, and flexbox layouts
+* **JavaScript (Vanilla):** Core logic, array shuffling, and DOM manipulation
 
 ## Project Structure
 
