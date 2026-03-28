@@ -2,6 +2,10 @@
 
 A modern and interactive password generator built using HTML, CSS, and JavaScript. This application allows users to generate secure passwords with precise control over character composition, along with a clean user interface and smooth animations.
 
+### App Preview
+![Dark Mode](assets/dark-mode.png)
+![Light Mode](assets/light-mode.png)
+
 ## Features
 
 * Custom password generation based on:
@@ -17,16 +21,14 @@ A modern and interactive password generator built using HTML, CSS, and JavaScrip
 * Suggested alternative passwords
 * Copy to clipboard functionality
 * Reset functionality for quick reconfiguration
-* Input normalization (removes leading zeros)
 * Toast notifications for user actions and errors
 * Light and Dark theme toggle
-* Clean UI with removed number input spinners
 
 ## Tech Stack
 
-* HTML
-* CSS
-* JavaScript (Vanilla)
+* **HTML5:** Semantic structure
+* **CSS3:** Custom properties, keyframe animations, and flexbox layouts
+* **JavaScript (Vanilla):** Core logic, array shuffling, and DOM manipulation
 
 ## Project Structure
 
