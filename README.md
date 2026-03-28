@@ -36,7 +36,7 @@ A modern and interactive password generator built using HTML, CSS, and JavaScrip
 
 ```
 .
-├── assets/         # Contains README images
+├── assets/
 ├── index.html
 ├── style.css
 ├── script.js
