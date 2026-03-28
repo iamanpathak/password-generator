@@ -3,10 +3,10 @@
 A modern and interactive password generator built using HTML, CSS, and JavaScript. This application allows users to generate secure passwords with precise control over character composition, along with a clean user interface and smooth animations.
 
 ### App Preview
-<p align="center">
-  <img src="assets/dark-mode.png" alt="Dark Mode" width="45%">
-  <img src="assets/light-mode.png" alt="Light Mode" width="45%">
-</p>
+
+| Dark Mode | Light Mode |
+| :---: | :---: |
+| <img src="assets/dark-mode.png" height="450"> | <img src="assets/light-mode.png" height="450"> |
 
 ## Features
 
