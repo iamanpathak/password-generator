@@ -4,11 +4,9 @@ A modern and interactive password generator built using HTML, CSS, and JavaScrip
 
 ### App Preview
 
-<p align="center">
-  <img src="assets/dark-mode.png" alt="Dark Mode" width="48%" />
-  &nbsp; &nbsp; &nbsp;
-  <img src="assets/light-mode.png" alt="Light Mode" width="48%" />
-</p> |
+| Dark Mode | Light Mode |
+| :---: | :---: |
+| <img src="assets/dark-mode.png" height="450"> | <img src="assets/light-mode.png" height="450">
 
 ## Features
 
