@@ -1,14 +1,14 @@
-# Password Generator
+# 🔐 Password Generator
 
 A modern and interactive password generator built using HTML, CSS, and JavaScript. This application allows users to generate secure passwords with precise control over character composition, along with a clean user interface and smooth animations.
 
-### App Preview
+### 📸 App Preview
 
 | Dark Mode | Light Mode |
 | :---: | :---: |
 | <img src="assets/dark-mode.png" height="450"> | <img src="assets/light-mode.png" height="450">
 
-## Features
+## ✨ Features
 
 * Custom password generation based on:
 
@@ -26,13 +26,13 @@ A modern and interactive password generator built using HTML, CSS, and JavaScrip
 * Toast notifications for user actions and errors
 * Light and Dark theme toggle
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 * **HTML5:** Semantic structure
 * **CSS3:** Custom properties, keyframe animations, and flexbox layouts
 * **JavaScript (Vanilla):** Core logic, array shuffling, and DOM manipulation
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 password-generator/
@@ -44,7 +44,7 @@ password-generator/
 └── .gitignore
 ```
 
-## How to Run
+## 🚀 How to Run
 
 1. Clone or download the repository:
 ```bash
@@ -53,11 +53,11 @@ git clone https://github.com/iamanpathak/password-generator.git
 2. Open the index.html file in any modern web browser.
 3. No additional setup or installation is required.
 
-## Notes
+## 💡 Notes
 
 This is a fully client-side application. All logic runs in the browser without any backend or external APIs.
 
-## License
+## 📄 License
 
 This project is open source and available for personal and educational use.
 
