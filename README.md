@@ -34,14 +34,14 @@ A modern and interactive password generator built using HTML, CSS, and JavaScrip
 
 ## 📁 Project Structure
 
-```
+```text
 password-generator/
 ├── assets/
 ├── index.html
 ├── style.css
 ├── script.js
-├── README.md
-└── .gitignore
+├── LICENSE
+└── README.md
 ```
 
 ## 🚀 How to Run
