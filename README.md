@@ -47,9 +47,10 @@ password-generator/
 ## How to Run
 
 1. Clone or download the repository:
-   ```bash
-   git clone https://github.com/iamanpathak/password-generator.git
-   ```
+
+```bash
+git clone https://github.com/iamanpathak/password-generator.git
+```
 2. Open the index.html file in any modern web browser.
 3. No additional setup or installation is required.
 
