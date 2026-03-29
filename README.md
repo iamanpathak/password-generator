@@ -59,9 +59,3 @@ This is a fully client-side application. All logic runs in the browser without a
 ## License
 
 This project is open source and available for personal and educational use.
-
----
-
-<p align="center">
-  Made with ❤️ by <a href="https://github.com/iamanpathak">Aman Pathak</a>
-</p>
