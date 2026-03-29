@@ -1,17 +1,25 @@
 # 🔐 Password Generator
 
-A modern and interactive password generator built using HTML, CSS, and JavaScript. This application allows users to generate secure passwords with precise control over character composition, along with a clean user interface and smooth animations.
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-### 📸 App Preview
+A secure, client-side password generator built with Vanilla JS. Features a Fisher-Yates shuffle algorithm for true randomness, real-time strength validation, and custom staggered UI animations in a zero-dependency architecture.
+
+---
+
+## 📸 App Preview
 
 | Dark Mode | Light Mode |
 | :---: | :---: |
 | <img src="assets/dark-mode.png" height="450"> | <img src="assets/light-mode.png" height="450">
 
+---
+
 ## ✨ Features
 
 * Custom password generation based on:
-
   * Total length
   * Uppercase letters
   * Lowercase letters
@@ -26,11 +34,24 @@ A modern and interactive password generator built using HTML, CSS, and JavaScrip
 * Toast notifications for user actions and errors
 * Light and Dark theme toggle
 
+---
+
+## 🧠 Technical Highlights
+
+* **Cryptographic Randomness:** Implements the Fisher-Yates shuffle algorithm to ensure true unbiased character distribution.
+* **Complex UI Animations:** Uses `setInterval` for a staggered, matrix-style password decoding reveal effect.
+* **Math-Driven Particles:** The emoji explosion effect utilizes Sine and Cosine functions (`Math.sin` / `Math.cos`) for precise circular particle scattering.
+* **Zero-Dependency:** 100% Vanilla JavaScript, DOM manipulation, and CSS3 Keyframes. No external libraries.
+
+---
+
 ## 🛠️ Tech Stack
 
 * **HTML5:** Semantic structure
 * **CSS3:** Custom properties, keyframe animations, and flexbox layouts
 * **JavaScript (Vanilla):** Core logic, array shuffling, and DOM manipulation
+
+---
 
 ## 📁 Project Structure
 
@@ -44,22 +65,28 @@ password-generator/
 └── README.md
 ```
 
+---
+
 ## 🚀 How to Run
 
 1. Clone or download the repository:
 ```bash
 git clone https://github.com/iamanpathak/password-generator.git
 ```
-2. Open the index.html file in any modern web browser.
+2. Open the `index.html` file in any modern web browser.
 3. No additional setup or installation is required.
+
+---
 
 ## 💡 Notes
 
 This is a fully client-side application. All logic runs in the browser without any backend or external APIs.
 
+---
+
 ## 📄 License
 
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the [MIT License](LICENSE).
 
 <p align="center">
   Made with ❤️ by <a href="https://github.com/iamanpathak">Aman Pathak</a>
