@@ -35,7 +35,7 @@ A modern and interactive password generator built using HTML, CSS, and JavaScrip
 ## Project Structure
 
 ```
-.
+password-generator/
 ├── assets/
 ├── index.html
 ├── style.css
@@ -46,9 +46,12 @@ A modern and interactive password generator built using HTML, CSS, and JavaScrip
 
 ## How to Run
 
-1. Clone or download the repository
-2. Open `index.html` in any modern browser
-3. No additional setup or installation is required
+1. Clone or download the repository:
+   ```bash
+   git clone [https://github.com/iamanpathak/password-generator.git](https://github.com/iamanpathak/password-generator.git)
+2. Open the index.html file in any modern web browser.
+3. No additional setup or installation is required.
+   ```
 
 ## Notes
 
@@ -57,3 +60,7 @@ This is a fully client-side application. All logic runs in the browser without a
 ## License
 
 This project is open source and available for personal and educational use.
+
+<p align="center">
+Made with ❤️ by <a href="https://github.com/iamanpathak">Aman Pathak</a>
+</p>
