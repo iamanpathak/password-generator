@@ -51,7 +51,6 @@ password-generator/
    git clone [https://github.com/iamanpathak/password-generator.git](https://github.com/iamanpathak/password-generator.git)
 2. Open the index.html file in any modern web browser.
 3. No additional setup or installation is required.
-   ```
 
 ## Notes
 
