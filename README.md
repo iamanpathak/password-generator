@@ -2,10 +2,10 @@
 
 [![JavaScript](https://img.shields.io/badge/JavaScript-Vanilla-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![HTML5](https://img.shields.io/badge/HTML5-Semantic-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-Animations-1572B7?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![CSS3](https://img.shields.io/badge/CSS3-Animations-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow)](https://opensource.org/licenses/MIT)
 
-A secure, client-side password generator built with Vanilla JS. Features a Fisher-Yates shuffle algorithm for true randomness, real-time strength validation, and custom staggered UI animations in a zero-dependency architecture.
+Hey! I'm Aman. I built this project to create a fast, secure, and fully client-side password generator without relying on external libraries. Using pure Vanilla JS, I focused on building a clean zero-dependency architecture, implementing a true-random Fisher-Yates shuffle, real-time strength validation, and smooth UI animations to make generating secure passwords both safe and interactive.
 
 ---
 
