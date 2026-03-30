@@ -2,7 +2,7 @@
 
 [![JavaScript](https://img.shields.io/badge/JavaScript-Vanilla-F7DF1E?logo=javascript&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![HTML5](https://img.shields.io/badge/HTML5-Semantic-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-Animations-1572B7?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B7?logo=css&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow)](https://opensource.org/licenses/MIT)
 
 Hey! I'm Aman. I built this secure, client-side password generator entirely with HTML, CSS, and Vanilla JavaScript. My goal was to engineer a clean, zero-dependency application without relying on any external libraries. I implemented a true-random Fisher-Yates shuffle for unbiased security, real-time strength validation, and custom UI animations to make the experience both safe and naturally interactive.
