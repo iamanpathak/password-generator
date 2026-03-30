@@ -86,7 +86,7 @@ This is a fully client-side application. All logic runs in the browser without a
 
 ## 📄 License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
 
 <p align="center">
   Made with ❤️ by <a href="https://github.com/iamanpathak">Aman Pathak</a>
