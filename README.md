@@ -6,6 +6,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow)](https://opensource.org/licenses/MIT)
 
 Hey! I'm Aman. I built this secure, client-side password generator to demonstrate how a fast, production-ready utility operates directly in the browser. I engineered a complete zero-dependency architecture using pure Vanilla JS, integrating a true-random Fisher-Yates shuffle for unbiased security, real-time strength validation, and smooth UI animations to ensure a safe and seamless experience.
+
 ---
 
 ## 📸 App Preview
