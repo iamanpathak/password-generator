@@ -57,12 +57,14 @@ Hey! I'm Aman. I built this secure, client-side password generator to demonstrat
 
 ```text
 password-generator/
-├── assets/
-├── index.html
-├── style.css
-├── script.js
-├── LICENSE
-└── README.md
+├── assets/                    # Image assets for documentation
+│   ├── dark-mode.png          # Dark theme preview
+│   └── light-mode.png         # Light theme preview
+├── index.html                 # Semantic UI structure
+├── script.js                  # Core logic & Fisher-Yates algorithm
+├── style.css                  # Custom styling & animations
+├── LICENSE                    # MIT License
+└── README.md                  # Project documentation
 ```
 
 ---
